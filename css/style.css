@@ -47,10 +47,10 @@ nav {
 }
 
 .nav-icon img {
-    width: 50px;
+    width: 100px;
     transform: scale(1);
     transition: transform 0.4 ease-in-out;
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
 .nav-icon img:hover {
@@ -67,7 +67,7 @@ nav {
 
 .nav-link-container a {
     margin: 0 15px;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 500;
     text-decoration: none;
     color: #ff9abd;
@@ -108,7 +108,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     height: 250px;
-    background: url("./images/chemin.jpg");
+    background: url("../images/chemin.jpg");
 }
 
 
@@ -145,14 +145,16 @@ L'accessoire de couleur est défini sur transparent afin de voir l'arrière-plan
     text-transform: uppercase;
     text-shadow: #4a536b 10px 10px 20px;
     font-style: italic;
-    background-image: linear-gradient(to right, #ff9abd, #4a536b);
+    background-image: linear-gradient(to right, #ff9abd, #aed6dc, #4a536b);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
 .text {
-    text-align: center;
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
     grid-column: span 2;
 }
 
@@ -163,7 +165,7 @@ footer {
     height: 100px;
     width: 100%;
     background-color: #4a536b;
-    border-top: solid 1px #aed6dc;
+    border-top: solid 3px #aed6dc;
 }
 
 footer p {

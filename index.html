@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet perso</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <nav>
-        <a class="nav-icon" href="index.html">
-            <img src="./images/logo.jpg">
-            <span>Galerie d'images</span>
-        </a>
-        <div class="nav-link">
-            <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+<html lang="fr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projet perso</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/screen.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <nav>
+            <a class="nav-icon" href="index.html">
+                <img src="./images/logo.jpg">
+                <span>Galerie d'images</span>
+            </a>
+            <div class="nav-link">
+                <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             <div class="nav-link-container">
                 <a href="index.html#identite">Identification</a>
                 <a href="index.html#objectif">Objectif</a>
@@ -34,7 +36,7 @@
         </div>
     </nav>
     <div class="parallax"></div>
-    <section id="identite">
+    <section id="identite" data-aos="zoom-out-down">
         <div class="container-grid">
             <div class="image">
                 <img src="./images/identite.jpg" alt="identite">
@@ -49,7 +51,7 @@
         </div>
     </section>
     <div class="parallax"></div>
-    <section id="objectif">
+    <section id="objectif" data-aos="zoom-out-up">
         <div class="container-grid">
             <div class="image">
                 <img src="./images/marche.jpg" alt="identite">
@@ -65,7 +67,7 @@
         </div>
     </section>
     <div class="parallax"></div>
-    <section id="souhait">
+    <section id="souhait" data-aos="zoom-out-down">
         <div class="container-grid">
             <div class="image">
                 <img src="./images/backend.jpg" alt="vision">
@@ -80,7 +82,7 @@
         </div>
     </section>
     <div class="parallax"></div>
-    <section id="valeur">
+    <section id="valeur" data-aos="zoom-out-up">
         <div class="container-grid">
             <div class="image">
                 <img src="./images/valeur.jpg" alt="vision">
@@ -101,7 +103,7 @@
         </div>
     </section>
     <div class="parallax"></div>
-    <section id="persnnage">
+    <section id="personnage" data-aos="zoom-out-down">
         <div class="container-grid">
             <div class="image">
                 <img src="./images/vision.jpg" alt="vision">
@@ -113,14 +115,17 @@
                 <h4>Profil</h4>
                 <p>Quelle est cette personne, quels sont ses bagages? Personnellement, un père de famille, un concubin. Professionnelement, plus de 18 années dans le secteur de la vente, avec vraiment beaucoup de profil clients. Pour l'informatique, du code
                     sur mon temps libre. Level 1 New Game, skills : HTML/CSS/JS/PHP/MYSQL</p>
-                <p>Objectif, Laravel, Symfony ou tout autre apprentissage du backend.</p>
+                    <p>Objectif, Laravel, Symfony ou tout autre apprentissage du backend.</p>
+                </div>
             </div>
-        </div>
     </section>
     <div class="parallax"></div>
     <footer>
-        <p>Copyright sylvain</p>
+            <p>Copyright sylvain</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

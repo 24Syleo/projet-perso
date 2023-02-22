@@ -1,0 +1,135 @@
+@media (max-width: 1080px) {
+    nav {
+        padding: 10px 20px;
+    }
+    .nav-icon {
+        order: 2;
+        /* devient le child 2 */
+        margin: 0 auto;
+    }
+
+    .nav-icon img{
+        width: 50px;
+    }
+
+    .nav-icon span {
+        font-size: 25px;
+    }
+    .nav-link {
+        order: 1;
+        /* devient le child 1 */
+    }
+    .hamburger {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        background-color: #4a536b;
+        align-items: center;
+        position: relative;
+    }
+    .hamburger span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #ff9abd;
+        position: absolute;
+        pointer-events: none;
+        /* pour ne pas cliquer dessus event js sur le btn */
+        transition: opacity 0.3s 0.15s ease-in-out;
+        /* transition barre span milieu disparait*/
+    }
+    /* hamburger barre du haut */
+    .hamburger span:nth-child(1) {
+        transform: translateY(7px);
+        /* y verticale */
+    }
+    /* hamburger barre du bas */
+    .hamburger span:nth-child(3) {
+        transform: translateY(-7px);
+        /* y verticale */
+    }
+    .hamburger span:nth-child(1),
+    .hamburger span:nth-child(3) {
+        transition: transform 0.3s ease-out;
+    }
+    /* apres ajout de la class open en js */
+    .hamburger.open span:nth-child(1) {
+        transform: translate(0) rotate(135deg);
+    }
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+        transition: opacity 0s ease-out;
+    }
+    .hamburger.open span:nth-child(3) {
+        transform: translate(0) rotate(-135deg);
+    }
+    /* mettre les liens en colonne */
+    .nav-link-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        background-color: #4a536b;
+        color: #fafafa;
+        top: 100%;
+        left: 0;
+        height: 100vh;
+        border-right: 3px solid #aed6dc;
+        padding: 15px 50px 15px 20px;
+        transform: translate(-100%);
+        transition: transform 0.3s ease-out;
+    }
+    .open {
+        transform: translate(0%)
+        /* class que j'ajoute avec js au clic d'hamburger pour faire apparaitre */
+    }
+    .nav-link-container a {
+        margin: 10px 0;
+    }
+   
+    .image img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .header{
+        font-size: 40px;
+    }
+
+    body{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 610px) {
+
+    .nav-icon span{
+        display: none;
+    }
+
+    .nav-link-container a{
+        font-size: 16px;
+    }
+    .container-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image{
+        display: none;
+    }
+
+    body{
+        font-size: 16px;
+    }
+
+    .header{
+        font-size: 25px;
+    }
+
+    .parallax{
+        height: 200px;
+    }
+}
