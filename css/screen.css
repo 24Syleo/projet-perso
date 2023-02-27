@@ -1,6 +1,7 @@
 @media (max-width: 1080px) {
     nav {
         padding: 10px 20px;
+        position:fixed;
     }
     .nav-icon {
         order: 2;
