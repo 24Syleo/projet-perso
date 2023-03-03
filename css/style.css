@@ -175,3 +175,41 @@ footer p {
     color: #ff9abd;
     margin-top: 40px;
 }
+
+/* slider accueil */
+
+.slider1 {
+    overflow: hidden !important;
+}
+
+.slider1 .slider {
+    display: flex;
+    animation: slider1 12s infinite ease-in-out;
+}
+
+@keyframes slider1 {
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+    25%,
+    45% {
+        transform: translateX(-100%);
+    }
+    50%,
+    70% {
+        transform: translateX(-200%);
+    }
+    75%,
+    95% {
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+}
+
+.slider1 h1 {
+    flex-shrink: 0;
+    width: 100%;
+}
