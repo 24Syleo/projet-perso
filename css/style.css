@@ -212,4 +212,5 @@ footer p {
     grid-template-columns: auto auto;
     justify-content: center;
     margin-left: auto;
+    height: 250px;
 }
