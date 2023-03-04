@@ -1,9 +1,9 @@
 *,
 ::before,
 ::after {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -21,7 +21,7 @@ nav {
     position: fixed !important;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 5px;
     background-color: #4a536b;
@@ -152,7 +152,7 @@ L'accessoire de couleur est défini sur transparent afin de voir l'arrière-plan
 }
 
 .text {
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     flex-direction: column;
     grid-column: span 2;
@@ -177,6 +177,7 @@ footer a {
     color: #ff9abd;
     margin-top: 40px;
 }
+
 
 /* slider accueil */
 
@@ -206,7 +207,7 @@ footer a {
     95% {
         transform: translateX(-300%);
     }
-    100%{
+    100% {
         transform: translateX(-400%);
     }
 }
@@ -216,11 +217,14 @@ footer a {
     width: 100%;
 }
 
+
 /* position accueil #id */
-.id{
+
+.id {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
+    align-items: center;
     margin-left: auto;
     height: 250px;
 }
