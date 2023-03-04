@@ -1,6 +1,7 @@
 @media (max-width: 1080px) {
     nav {
         position: fixed !important;
+        justify-content: space-around;
     }
     .nav-icon {
         order: 2;
@@ -99,6 +100,9 @@
 }
 
 @media (max-width: 610px) {
+    nav {
+        justify-content: center;
+    }
     .nav-icon span {
         display: none;
     }
@@ -124,5 +128,14 @@
     .id {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 570px) {
+    .nav {
+        width: 10%;
+    }
+    .nav-icon {
+        margin-left: 40px;
     }
 }
