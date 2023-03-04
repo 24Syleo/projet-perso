@@ -192,23 +192,19 @@ footer a {
 
 @keyframes slider1 {
     0%,
-    20% {
+    28% {
         transform: translateX(0);
     }
-    25%,
-    45% {
+    33%,
+    61% {
         transform: translateX(-100%);
     }
-    50%,
-    70% {
+    66%,
+    94% {
         transform: translateX(-200%);
     }
-    75%,
-    95% {
-        transform: translateX(-300%);
-    }
     100% {
-        transform: translateX(-400%);
+        transform: translateX(-300%);
     }
 }
 
